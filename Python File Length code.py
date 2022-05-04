@@ -8,7 +8,7 @@ def get_track_len(file_path):
             return int(track.duration)
     return 0
     
-length_millisec = sum(get_track_len(f) for f in os.listdir(r'C:\Users\ayush\Desktop\dron'))
+length_millisec = sum(get_track_len(f) for f in os.listdir(r'folder_path'))
 length_sec = length_millisec/1000
 length_min = length_sec/60
 
